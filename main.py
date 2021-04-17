@@ -19,6 +19,9 @@ was_oos = True
 
 if __name__=='__main__':
     # download the homepage
+    payload = {'chat_id': chat_id, 'text': f'Bot is now starting, checking: {url}'}
+    requests.post(out_url, params=payload)
+
     while True:
         r = requests.get(url, headers=headers)
 
