@@ -37,5 +37,5 @@ if __name__=='__main__':
             elif not "addToCartButton" in http and not was_oos:
                 was_oos[i]=True
             
-            print("Waiting 60 seconds before retrying.")
+        print("Waiting 60 seconds before retrying.")
         time.sleep(60)
